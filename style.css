@@ -1,0 +1,211 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      border: none;
+      color: white;
+}
+
+/* html{
+      height: 100%;
+} */
+
+body{
+      /* display: flex;
+      justify-content: center;
+      padding: 1rem; */
+      /* align-items: center; */
+      /* height: 100%; */
+      background: chocolate;
+
+}
+
+.container{
+      /*background: bisque;*/
+      /* background-image: url(https://bit.ly/3JDV1lM); */
+      background-image: url(https://bit.ly/3FnTcqx);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 80%;
+      max-width: 30rem;
+      top: 1rem;
+      left: 50%;
+      position: absolute;
+      padding: 3rem 2.8rem;
+      transform: translateX(-50%);
+      border-radius: 1rem;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+
+      
+}
+
+.searchContainer{
+      width: 100%;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: 70% 20%;
+      /* gap: 1.2rem; */
+}
+
+.searchContainer input{
+      /* background: #6e6a6a; */
+      background: none;
+      outline: none;
+      padding: 1rem;
+      width: 100%;
+      border-top-left-radius: 1rem;
+      border-top: solid chocolate 2px;
+      border-bottom: solid chocolate 1px;
+      border-left: solid chocolate 1.5px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container .searchContainer input::placeholder{
+      color: #e4c9a9;
+}
+
+button{
+      background-color: chocolate;
+      padding: 0.5rem;
+      border-top-right-radius: 1rem;
+      cursor: pointer;
+      /* border-radius: 1rem; */
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+}
+
+#result{
+      color: burlywood;
+}
+
+.details{
+      /*background-color: chocolate;
+      */
+      position: relative;
+      text-align: center;
+      padding: 0.6rem 0;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+      border: 2px dotted chocolate ;
+      border-right: none;
+      border-left: none;
+}
+
+h2{
+      font-size: 1.5rem;
+}
+
+h4{
+      font-size: 1rem;
+}
+
+#recipe{
+      position: absolute;
+      background-color: black;
+      min-height: 100%;
+      /*width: 50%;
+      */top: 0;
+      left: 0;
+      z-index: 2;
+      border-radius: 1rem;
+      -webkit-border-radius: 1rem;
+      -moz-border-radius: 1rem;
+      -ms-border-radius: 1rem;
+      -o-border-radius: 1rem;
+      display: none;
+}
+
+#hideRecipe{
+      font-size: 1rem;
+      position: relative;
+      width: 1.8rem;
+      height: 1.8rem;
+      top: 1.2rem;
+      left: 90%;
+}
+
+#recipe pre{
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      padding: 2.5rem 1.2rem 1.2rem 1.2rem;
+}
+
+img{
+      display: block;
+      width: 50%;
+      margin: 1.8rem auto 0 auto;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+}
+
+#showRecipe{
+      font-size: 1rem;
+      position: relative;
+      top: 1.5rem;
+      left: 75%;
+      border-top-right-radius: 0;
+      border-top-left-radius: 1rem;
+}
+
+ul{
+      font-size: 1rem;
+      position: relative;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 0.8rem 1.1rem;
+      padding: 1.2rem 0 0 1,2rem;
+      /* margin-bottom: 1rem; */
+}
+
+h3{
+      color: bisque;
+      text-align: center;
+      margin-top: 1rem;
+}
+
+@media screen and (max-width: 460px){
+      .container .searchContainer{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: none;
+            gap: 1rem;
+      }
+
+      .container .searchContainer button{
+            background-color: chocolate;
+            padding: 0.5rem;
+            cursor: pointer;
+            border-radius: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      
+      
+      }
+      
+#showRecipe{
+      font-size: 1rem;
+      position: relative;
+      top: 1.5rem;
+      left: 65%;
+      border-top-right-radius: 0;
+      border-top-left-radius: 1rem;
+}
+
+      #hideRecipe{
+            left: 80%;
+      }
+
+      
+      
+}
