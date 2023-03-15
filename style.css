@@ -44,6 +44,22 @@ body{
       
 }
 
+.logo{
+      margin-bottom: 2rem;
+}
+
+.logo h1{
+      color: rgb(178, 159, 54);
+}
+
+.logo h1 span{
+      color: chocolate;
+}
+
+.logo p{
+      color: bisque;
+}
+
 .searchContainer{
       width: 100%;
       display: grid;
